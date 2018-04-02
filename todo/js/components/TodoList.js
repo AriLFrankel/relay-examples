@@ -70,6 +70,7 @@ export default createFragmentContainer(TodoList, {
           node {
             id,
             complete,
+            # Here we are composing the data needs of the Todo child of this component
             ...Todo_todo,
           },
         },

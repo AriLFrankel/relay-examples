@@ -73,6 +73,8 @@ class TodoApp extends React.Component {
 
 export default createFragmentContainer(TodoApp, {
   viewer: graphql`
+    # This fragmnet is defined with the Relay naming convention of filename_propname so the data will available as propname on the component
+    # Had it just said the filename, the data would be available as a data prop.
     fragment TodoApp_viewer on User {
       id,
       totalCount,
